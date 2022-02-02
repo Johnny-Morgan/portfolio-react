@@ -8,14 +8,6 @@ const Navbar = () => {
   return (
     <nav className={classes.navbar}>
       <h1 className={classes.navbar__logo}>JohnMorgan.dev</h1>
-      <div
-        onClick={() => setMenuOpen(!menuOpen)}
-        className={`${classes.navbar__hamburger} ${menuOpen && classes.open}`}
-      >
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
       <ul className={`${classes.navbar__menu} ${menuOpen && classes.open}`}>
         {MenuItems.map((item, index) => (
           <li key={index}>
@@ -25,6 +17,18 @@ const Navbar = () => {
           </li>
         ))}
       </ul>
+      <div className={classes.navbar__hamburger}>
+        <div
+          onClick={() => setMenuOpen(!menuOpen)}
+          className={`${classes["navbar__hamburger-icon"]} ${
+            menuOpen && classes.open
+          }`}
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
     </nav>
   );
 };
