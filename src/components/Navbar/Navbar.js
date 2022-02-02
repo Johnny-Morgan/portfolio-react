@@ -16,7 +16,7 @@ const Navbar = () => {
         <span></span>
         <span></span>
       </div>
-      <ul>
+      <ul className={`${classes.navbar__menu} ${menuOpen && classes.open}`}>
         {MenuItems.map((item, index) => (
           <li key={index}>
             <a href={item.url}>{item.title}</a>

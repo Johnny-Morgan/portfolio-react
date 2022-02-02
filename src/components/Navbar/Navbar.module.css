@@ -42,3 +42,10 @@
 .navbar__hamburger.open span:last-child {
   transform: rotate(-45deg);
 }
+
+.navbar__menu {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  text-transform: uppercase;
+}
