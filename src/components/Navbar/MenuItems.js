@@ -1,5 +1,5 @@
 export const MenuItems = [
-  { title: "About", url: "#" },
-  { title: "Projects", url: "#" },
-  { title: "Contact", url: "#" },
+  { title: "About", url: "#", delay: 0.05 },
+  { title: "Projects", url: "#", delay: 0.1 },
+  { title: "Contact", url: "#", delay: 0.15 },
 ];

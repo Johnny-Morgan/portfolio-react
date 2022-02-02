@@ -1,9 +1,12 @@
 import React, { useState } from "react";
 import classes from "./Navbar.module.css";
 import { MenuItems } from "./MenuItems";
+import { motion } from "framer-motion";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const animateFrom = { opacity: 0, y: -40 };
+  const animateTo = { opacity: 1, y: 0 };
 
   return (
     <nav className={classes.navbar}>
@@ -11,9 +14,15 @@ const Navbar = () => {
       <ul className={`${classes.navbar__menu} ${menuOpen && classes.open}`}>
         {MenuItems.map((item, index) => (
           <li key={index}>
-            <a href={item.url} className={classes.navbar__link}>
+            <motion.a
+              href={item.url}
+              className={classes.navbar__link}
+              initial={animateFrom}
+              animate={animateTo}
+              transition={{ delay: item.delay }}
+            >
               {item.title}
-            </a>
+            </motion.a>
           </li>
         ))}
       </ul>
