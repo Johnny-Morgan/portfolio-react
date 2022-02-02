@@ -19,7 +19,9 @@ const Navbar = () => {
       <ul className={`${classes.navbar__menu} ${menuOpen && classes.open}`}>
         {MenuItems.map((item, index) => (
           <li key={index}>
-            <a href={item.url}>{item.title}</a>
+            <a href={item.url} className={classes.navbar__link}>
+              {item.title}
+            </a>
           </li>
         ))}
       </ul>

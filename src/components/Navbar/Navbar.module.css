@@ -21,6 +21,7 @@
   cursor: pointer;
   margin-right: 2rem;
   z-index: 1;
+  display: none;
 }
 
 .navbar__hamburger span {
@@ -48,4 +49,13 @@
   gap: 1.5rem;
   list-style: none;
   text-transform: uppercase;
+}
+
+.navbar__link {
+  text-decoration: none;
+  color: #000;
+}
+
+.navbar__link:hover {
+  color: #fff;
 }
