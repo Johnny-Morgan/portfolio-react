@@ -4,8 +4,41 @@
   align-items: center;
   padding: 1rem;
   background-color: red;
+  height: 80px;
 }
 
 .navbar__logo {
   font-size: 2rem;
+  font-weight: 500;
+}
+
+.navbar__hamburger {
+  width: 32px;
+  height: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  margin-right: 2rem;
+  z-index: 1;
+}
+
+.navbar__hamburger span {
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+  transform-origin: left;
+  transition: all 1s ease;
+}
+
+.navbar__hamburger.open span:first-child {
+  transform: rotate(45deg);
+}
+
+.navbar__hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.navbar__hamburger.open span:last-child {
+  transform: rotate(-45deg);
 }

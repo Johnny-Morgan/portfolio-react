@@ -6,6 +6,11 @@ const Navbar = () => {
   return (
     <nav className={classes.navbar}>
       <h1 className={classes.navbar__logo}>JohnMorgan.dev</h1>
+      <div className={classes.navbar__hamburger}>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
       <ul>
         {MenuItems.map((item, index) => (
           <li key={index}>
