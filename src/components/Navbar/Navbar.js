@@ -1,12 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import classes from "./Navbar.module.css";
 import { MenuItems } from "./MenuItems";
 
 const Navbar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <nav className={classes.navbar}>
       <h1 className={classes.navbar__logo}>JohnMorgan.dev</h1>
-      <div className={classes.navbar__hamburger}>
+      <div
+        onClick={() => setMenuOpen(!menuOpen)}
+        className={`${classes.navbar__hamburger} ${menuOpen && classes.open}`}
+      >
         <span></span>
         <span></span>
         <span></span>
