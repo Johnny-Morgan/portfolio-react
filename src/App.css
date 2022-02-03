@@ -1,0 +1,11 @@
+:root {
+  --c-chilli: hsl(6, 49%, 46%);
+  --c-chilli-light: hsl(6, 49%, 49%);
+  --c-charcoal: hsl(0, 0%, 24%);
+  --c-charcoal-light: hsl(0, 0%, 27%);
+  --c-herb: hsl(107, 7%, 40%);
+  --c-herb-light: hsl(107, 7%, 43%);
+  --c-terracotta: hsl(357, 23%, 47%);
+  --c-terracotta-light: hsl(357, 23%, 50%);
+  --c-white: hsl(0, 0%, 96%);
+}
