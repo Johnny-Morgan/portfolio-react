@@ -1,7 +1,7 @@
 import React from "react";
 import { MenuItems } from "../MenuItems";
 import { motion } from "framer-motion";
-import classes from "../Navbar.module.css";
+import classes from "./NavLinks.module.css";
 
 const NavLinks = ({ menuOpen }) => {
   const animateFrom = { opacity: 0, y: -40 };
