@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "../Navbar.module.css";
+import classes from "./Hamburger.module.css";
 
 const Hamburger = ({ menuOpen, setMenuOpen }) => {
   return (
