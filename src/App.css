@@ -21,6 +21,11 @@
   top: 80px;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
+  scrollbar-width: none;
+}
+
+.sections::-webkit-scrollbar {
+  display: none;
 }
 
 .sections > * {
