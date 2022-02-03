@@ -48,6 +48,7 @@
 
 @media (max-width: 768px) {
   .navbar__menu {
+    grid-column: 1;
     display: flex;
     align-items: center;
     flex-direction: column;
