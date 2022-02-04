@@ -20,30 +20,22 @@
   background-color: var(--c-charcoal);
 }
 
-.navbar__menu li:first-child:hover {
-  background-color: var(--c-charcoal-light);
-}
-
 .navbar__menu li:nth-child(2) {
   background-color: var(--c-herb);
-}
-
-.navbar__menu li:nth-child(2):hover {
-  background-color: var(--c-herb-light);
 }
 
 .navbar__menu li:last-child {
   background-color: var(--c-terracotta);
 }
 
-.navbar__menu li:last-child:hover {
-  background-color: var(--c-terracotta-light);
-}
-
 .navbar__link {
   text-decoration: none;
   color: var(--c-white);
   transition: all 0.2s ease-in-out;
+}
+
+.navbar__link:hover {
+  color: hsl(0, 0%, 87%);
 }
 
 @media (max-width: 768px) {
