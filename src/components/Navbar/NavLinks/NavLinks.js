@@ -3,7 +3,7 @@ import { MenuItems } from "../MenuItems";
 import { motion } from "framer-motion";
 import classes from "./NavLinks.module.css";
 
-const NavLinks = ({ menuOpen }) => {
+const NavLinks = ({ menuOpen, setMenuOpen }) => {
   const animateFrom = { opacity: 0, y: -40 };
   const animateTo = { opacity: 1, y: 0 };
 
@@ -17,6 +17,7 @@ const NavLinks = ({ menuOpen }) => {
             initial={animateFrom}
             animate={animateTo}
             transition={{ delay: item.delay }}
+            onClick={() => setMenuOpen(false)}
           >
             {item.title}
           </motion.a>
