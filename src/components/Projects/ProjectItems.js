@@ -6,7 +6,13 @@ export const ProjectItems = [
     about: "An e-commerce website built with the Django Framework.",
     liveURL: "https://pickles-eshop.herokuapp.com/",
     repoURL: "https://github.com/Johnny-Morgan/pickles",
-    technologies: ["Python", "Django", "PostgreSQL", "AWS", "Heroku"],
+    technologies: [
+      "./python.png",
+      "./django.png",
+      "./postgresql.png",
+      "./aws.png",
+      "./heroku.png",
+    ],
   },
   {
     id: 2,
@@ -15,7 +21,12 @@ export const ProjectItems = [
     about: "The perfect place to log and share your hikes.",
     liveURL: "https://hike-logger.herokuapp.com/",
     repoURL: "https://github.com/Johnny-Morgan/hike-logger",
-    technologies: ["Python", "Flask", "MongoDB", "Heroku"],
+    technologies: [
+      "./python.png",
+      "./flask.png",
+      "./mongodb.png",
+      "./heroku.png",
+    ],
   },
   {
     id: 3,
@@ -24,6 +35,6 @@ export const ProjectItems = [
     about: "A fun and challenging memory game.",
     liveURL: "https://johnny-morgan.github.io/memory-blocks/",
     repoURL: "https://github.com/Johnny-Morgan/memory-blocks",
-    technologies: ["JavaScript", "jQuery"],
+    technologies: ["./javascript.png", "./jquery.png"],
   },
 ];

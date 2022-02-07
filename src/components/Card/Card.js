@@ -14,8 +14,10 @@ const Card = ({ title, img, about, liveURL, repoURL, technologies }) => {
         <p>{about}</p>
         <h3>Technologies:</h3>
         <ul className={classes.card__technologies}>
-          {technologies.map((technology) => (
-            <li>{technology}</li>
+          {technologies.map((technology, index) => (
+            <li key={index}>
+              <img src={require(`${technology}`)} alt="" />
+            </li>
           ))}
         </ul>
 
