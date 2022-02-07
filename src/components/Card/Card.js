@@ -12,9 +12,13 @@ const Card = ({ title, img, about, liveURL, repoURL, technologies }) => {
       <div className={classes.card__content}>
         <h2>{title}</h2>
         <p>{about}</p>
-        {technologies.map((t) => (
-          <div>{t}</div>
-        ))}
+        <h3>Technologies:</h3>
+        <ul className={classes.card__technologies}>
+          {technologies.map((technology) => (
+            <li>{technology}</li>
+          ))}
+        </ul>
+
         <div className={classes["card__content--btns"]}>
           <a href={liveURL} target="_blank" className={classes.btn}>
             Live Site
