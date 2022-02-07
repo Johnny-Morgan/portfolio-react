@@ -10,10 +10,12 @@ const Projects = () => {
         {ProjectItems.map((project) => (
           <Card
             key={project.id}
+            img={project.img}
             title={project.title}
             about={project.about}
             liveURL={project.liveURL}
             repoURL={project.repoURL}
+            technologies={project.technologies}
           />
         ))}
       </div>
