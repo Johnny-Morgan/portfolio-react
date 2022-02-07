@@ -10,7 +10,7 @@ const NavLinks = ({ menuOpen, setMenuOpen }) => {
   return (
     <ul className={`${classes.navbar__menu} ${menuOpen && classes.open}`}>
       {MenuItems.map((item, index) => (
-        <li key={index}>
+        <li key={index} className={classes.navbar__item}>
           <motion.a
             href={item.url}
             className={classes.navbar__link}

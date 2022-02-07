@@ -5,7 +5,7 @@
   padding: 0;
 }
 
-.navbar__menu li {
+.navbar__item {
   width: 100%;
   height: 80px;
   display: flex;
@@ -13,15 +13,15 @@
   align-items: center;
 }
 
-.navbar__menu li:first-child {
+.navbar__item:first-child {
   background-color: var(--c-charcoal);
 }
 
-.navbar__menu li:nth-child(2) {
+.navbar__item:nth-child(2) {
   background-color: var(--c-herb);
 }
 
-.navbar__menu li:last-child {
+.navbar__item:last-child {
   background-color: var(--c-terracotta);
 }
 
@@ -37,7 +37,6 @@
 
 @media (max-width: 768px) {
   .navbar__menu {
-    /* grid-column: 1; */
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -49,7 +48,7 @@
     transition: all 0.5s ease;
   }
 
-  .navbar__menu li {
+  .navbar__item {
     height: 100%;
   }
 
