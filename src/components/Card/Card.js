@@ -5,7 +5,11 @@ import image from "./test.png";
 const Card = () => {
   return (
     <div className={classes.card}>
-      <img src={image} alt="test image" />
+      <img className={classes.card__img} src={image} alt="test image" />
+      <div className={classes.card__content}>
+        <h2>Pickles</h2>
+        <p>An e-commerce website built with the Django Framework.</p>
+      </div>
     </div>
   );
 };
