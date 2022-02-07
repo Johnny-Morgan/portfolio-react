@@ -9,6 +9,7 @@ const Projects = () => {
       <div className={classes.container}>
         {ProjectItems.map((project) => (
           <Card
+            key={project.id}
             title={project.title}
             about={project.about}
             liveURL={project.liveURL}
