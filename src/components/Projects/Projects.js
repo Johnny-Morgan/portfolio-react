@@ -4,9 +4,13 @@ import classes from "./Projects.module.css";
 
 const Projects = () => {
   return (
-    <div id="projects" className={classes.projects}>
-      <Card />
-    </div>
+    <section id="projects" className={classes.projects}>
+      <div className={classes.container}>
+        <Card />
+        <Card />
+        <Card />
+      </div>
+    </section>
   );
 };
 
