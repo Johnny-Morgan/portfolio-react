@@ -1,9 +1,11 @@
 .card {
   width: 20rem;
   height: 32rem;
-  border: 2px solid #000;
   position: relative;
   overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.1);
+  margin-left: 3rem;
 }
 
 .card__img {
@@ -29,4 +31,33 @@
 
 .card:hover .card__content {
   top: 0;
+}
+
+.card__content--btns {
+  margin-top: 3rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.btn {
+  color: var(--c-white);
+  text-decoration: none;
+  background: var(--c-herb);
+  padding: 1em 2em;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+.btn--outline {
+  background: var(--c-white);
+  color: var(--c-herb);
+}
+
+.btn:hover {
+  background: var(--c-herb-light);
+}
+
+.btn--outline:hover {
+  color: var(--c-white);
+  background: var(--c-herb-light);
 }
