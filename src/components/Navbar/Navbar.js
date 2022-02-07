@@ -9,7 +9,6 @@ const Navbar = () => {
 
   return (
     <nav className={classes.navbar}>
-      <h1 className={classes.navbar__logo}>JohnMorgan.dev</h1>
       <NavLinks menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <Hamburger menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
     </nav>
