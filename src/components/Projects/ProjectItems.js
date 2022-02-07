@@ -7,11 +7,11 @@ export const ProjectItems = [
     liveURL: "https://pickles-eshop.herokuapp.com/",
     repoURL: "https://github.com/Johnny-Morgan/pickles",
     technologies: [
-      "./python.png",
-      "./django.png",
-      "./postgresql.png",
-      "./aws.png",
-      "./heroku.png",
+      { src: "./python.png", tooltip: "Python" },
+      { src: "./django.png", tooltip: "Django" },
+      { src: "./postgresql.png", tooltip: "PostgreSQL" },
+      { src: "./aws.png", tooltip: "AWS" },
+      { src: "./heroku.png", tooltip: "Heroku" },
     ],
   },
   {
@@ -22,10 +22,10 @@ export const ProjectItems = [
     liveURL: "https://hike-logger.herokuapp.com/",
     repoURL: "https://github.com/Johnny-Morgan/hike-logger",
     technologies: [
-      "./python.png",
-      "./flask.png",
-      "./mongodb.png",
-      "./heroku.png",
+      { src: "./python.png", tooltip: "Python" },
+      { src: "./flask.png", tooltip: "Flask" },
+      { src: "./mongodb.png", tooltip: "MongoDB" },
+      { src: "./heroku.png", tooltip: "Heroku" },
     ],
   },
   {
@@ -35,6 +35,9 @@ export const ProjectItems = [
     about: "A fun and challenging memory game.",
     liveURL: "https://johnny-morgan.github.io/memory-blocks/",
     repoURL: "https://github.com/Johnny-Morgan/memory-blocks",
-    technologies: ["./javascript.png", "./jquery.png"],
+    technologies: [
+      { src: "./javascript.png", tooltip: "JavaScript" },
+      { src: "./jquery.png", tooltip: "jQuery" },
+    ],
   },
 ];

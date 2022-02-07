@@ -1,4 +1,5 @@
 import React from "react";
+import ReactTooltip from "react-tooltip";
 import classes from "./Card.module.css";
 
 const Card = ({ title, img, about, liveURL, repoURL, technologies }) => {
@@ -16,11 +17,15 @@ const Card = ({ title, img, about, liveURL, repoURL, technologies }) => {
         <ul className={classes.card__technologies}>
           {technologies.map((technology, index) => (
             <li key={index}>
-              <img src={require(`${technology}`)} alt="" />
+              <img
+                src={require(`${technology.src}`)}
+                alt="technology logo"
+                data-tip={technology.tooltip}
+              />
+              <ReactTooltip />
             </li>
           ))}
         </ul>
-
         <div className={classes["card__content--btns"]}>
           <a href={liveURL} target="_blank" className={classes.btn}>
             Live Site
