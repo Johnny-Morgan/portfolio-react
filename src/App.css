@@ -33,3 +33,9 @@
   height: calc(100vh - 80px);
   scroll-snap-align: start;
 }
+
+@media (max-width: 1200px) {
+  .sections {
+    scroll-snap-type: none;
+  }
+}
