@@ -68,7 +68,8 @@
   gap: 1rem;
 }
 
-.btn {
+.btn:link,
+.btn:visited {
   color: var(--c-white);
   text-decoration: none;
   background: var(--c-herb);
@@ -78,16 +79,19 @@
   transition: all 0.3s;
 }
 
-.btn--outline {
+.btn--outline:link,
+.btn--outline:visited {
   background: var(--c-white);
   color: var(--c-herb);
 }
 
-.btn:hover {
+.btn:hover,
+.btn:active {
   background: var(--c-herb-light);
 }
 
-.btn--outline:hover {
+.btn--outline:hover,
+.btn--outline:active {
   color: var(--c-white);
   background: var(--c-herb-light);
 }
