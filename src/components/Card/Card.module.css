@@ -57,7 +57,7 @@
 .card__technologies img {
   width: 2.5rem;
   height: 2.5rem;
-  background: var(--c-herb-xlight);
+  background: var(--c-herb-light);
   padding: 4px;
   border-radius: 100px;
 }

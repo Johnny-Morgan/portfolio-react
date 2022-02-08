@@ -1,15 +1,43 @@
 .projects {
   background-color: var(--c-white);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
+.header {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: var(--c-charcoal);
+}
+
 .container {
-  max-width: 1300px;
+  max-width: 1400px;
   margin: 0 auto;
   display: flex;
-  gap: 3rem;
+  gap: 4rem;
   align-items: center;
   justify-content: space-evenly;
+}
+
+@media (max-width: 1200px) {
+  .projects {
+    height: auto;
+  }
+
+  .header {
+    margin-top: 2rem;
+  }
+
+  .container {
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    font-size: 2.5rem;
+  }
 }
