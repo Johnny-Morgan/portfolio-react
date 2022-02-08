@@ -27,12 +27,18 @@ const Card = ({ title, img, about, liveURL, repoURL, technologies }) => {
           ))}
         </ul>
         <div className={classes["card__content--btns"]}>
-          <a href={liveURL} target="_blank" className={classes.btn}>
+          <a
+            href={liveURL}
+            target="_blank"
+            rel="noreferrer "
+            className={classes.btn}
+          >
             Live Site
           </a>
           <a
             href={repoURL}
             target="_blank"
+            rel="noreferrer"
             className={`${classes.btn} ${classes["btn--outline"]}`}
           >
             Repo
