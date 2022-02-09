@@ -14,6 +14,8 @@
 .message {
   font-weight: 500;
   margin-bottom: 1.5rem;
+  width: 70%;
+  text-align: center;
 }
 
 .container {
@@ -39,6 +41,11 @@
 .form input {
   margin-bottom: 0.75rem;
   height: 2rem;
+}
+
+.form textarea {
+  height: 10rem;
+  margin-bottom: 2.5rem;
 }
 
 .confirmation-msg {

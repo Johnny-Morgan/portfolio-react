@@ -58,7 +58,7 @@ const Contact = () => {
         </form>
         {confirmationMessage && (
           <span className={classes["confirmation-msg"]}>
-            Thank you, I'll be in touch!
+            Thank you, your message has been sent. I'll be in touch!
           </span>
         )}
       </div>
