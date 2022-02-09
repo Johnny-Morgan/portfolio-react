@@ -1,5 +1,7 @@
 import React from "react";
+import Button from "../UI/Button/Button";
 import classes from "./Contact.module.css";
+
 const Contact = () => {
   return (
     <section id="contact" className={classes.contact}>
@@ -16,7 +18,7 @@ const Contact = () => {
           <input type="email" name="email" id="email" />
           <label htmlFor="message">Message</label>
           <textarea name="message" id="message" cols="30" rows="10"></textarea>
-          <button>Submit</button>
+          <Button type="submit">Submit</Button>
         </form>
       </div>
     </section>
