@@ -1,11 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import Button from "../UI/Button/Button";
 import classes from "./Contact.module.css";
 
 const Contact = () => {
+  const [confirmationMessage, setConfirmationMessage] = useState(false);
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(e);
+    setConfirmationMessage(true);
   };
 
   return (
@@ -25,6 +27,11 @@ const Contact = () => {
           <textarea name="message" id="message" cols="30" rows="10"></textarea>
           <Button type="submit">Submit</Button>
         </form>
+        {confirmationMessage && (
+          <span className={classes["confirmation-msg"]}>
+            Thank you, I'll be in touch!
+          </span>
+        )}
       </div>
     </section>
   );
