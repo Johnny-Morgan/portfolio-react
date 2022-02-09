@@ -1,0 +1,15 @@
+.footer {
+  height: 80px;
+  background: var(--c-chilli);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 3rem;
+  color: var(--c-white);
+}
+
+.socials {
+  display: flex;
+  gap: 1rem;
+}
