@@ -3,13 +3,13 @@ import classes from "./Contact.module.css";
 const Contact = () => {
   return (
     <section id="contact" className={classes.contact}>
-      <h2 className={classes.header}>Contact Me</h2>
-      <p className={classes.message}>
-        Interested in working together? Get in touch by filling out the form
-        below.
-      </p>
       <div className={classes.container}>
-        <form className="form">
+        <h2 className={classes.header}>Contact Me</h2>
+        <p className={classes.message}>
+          Interested in working together? Get in touch by filling out the form
+          below.
+        </p>
+        <form className={classes.form}>
           <label htmlFor="name">Name</label>
           <input type="text" name="name" id="name" />
           <label htmlFor="email">Email</label>
