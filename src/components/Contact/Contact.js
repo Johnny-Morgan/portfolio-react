@@ -3,6 +3,11 @@ import Button from "../UI/Button/Button";
 import classes from "./Contact.module.css";
 
 const Contact = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(e);
+  };
+
   return (
     <section id="contact" className={classes.contact}>
       <div className={classes.container}>
@@ -11,7 +16,7 @@ const Contact = () => {
           Interested in working together? Get in touch by filling out the form
           below.
         </p>
-        <form className={classes.form}>
+        <form className={classes.form} onSubmit={handleSubmit}>
           <label htmlFor="name">Name</label>
           <input type="text" name="name" id="name" />
           <label htmlFor="email">Email</label>
