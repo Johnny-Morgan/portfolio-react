@@ -2,10 +2,10 @@
   border: 1px solid var(--c-chilli);
   border-radius: 5px;
   background: var(--c-chilli);
-  color: white;
-  padding: 0.25rem 1rem;
+  color: var(--c-white);
+  padding: 0.5em 1em;
   cursor: pointer;
-  margin-top: 1rem;
+  font-weight: 500;
 }
 
 .btn:hover,
