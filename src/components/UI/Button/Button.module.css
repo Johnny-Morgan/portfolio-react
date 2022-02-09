@@ -1,0 +1,19 @@
+.btn {
+  border: 1px solid var(--c-chilli);
+  border-radius: 5px;
+  background: var(--c-chilli);
+  color: white;
+  padding: 0.25rem 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.btn:hover,
+.btn:active {
+  background: var(--c-chilli-light);
+  border-color: var(--c-chilli-light);
+}
+
+.btn:focus {
+  outline: none;
+}
