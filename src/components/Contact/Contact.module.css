@@ -3,12 +3,17 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: var(--c-charcoal);
 }
 
 .header {
   font-size: 3rem;
-  margin-bottom: 2rem;
-  color: var(--c-charcoal);
+  margin-bottom: 1rem;
+}
+
+.message {
+  font-weight: 500;
+  margin-bottom: 1.5rem;
 }
 
 .container {
