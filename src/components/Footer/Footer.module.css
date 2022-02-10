@@ -2,14 +2,23 @@
   height: 80px;
   background: var(--c-chilli);
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
-  margin-top: 3rem;
+  justify-content: center;
+  gap: 3rem;
   color: var(--c-white);
 }
 
 .socials {
   display: flex;
   gap: 1rem;
+}
+
+.icon {
+  font-size: 1.5rem;
+  color: var(--c-white);
+  transition: all 0.5s;
+}
+
+.icon:hover {
+  color: var(--c-charcoal);
 }
