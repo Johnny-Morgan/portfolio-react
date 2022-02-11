@@ -33,8 +33,12 @@
   height: 70%;
   padding: 1.5rem;
   border-radius: 5px;
-  background: var(--c-terracotta);
   box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.15);
+  background-image: linear-gradient(
+    to right bottom,
+    var(--c-terracotta-light),
+    var(--c-terracotta)
+  );
 }
 
 .form label {
