@@ -31,9 +31,14 @@
   flex-direction: column;
   width: 70%;
   height: 70%;
+  padding: 1.5rem;
+  border-radius: 5px;
+  background: var(--c-terracotta);
+  box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.15);
 }
 
 .form label {
+  color: var(--c-white);
   font-weight: 500;
   margin-bottom: 0.25rem;
 }
@@ -41,13 +46,24 @@
 .form input {
   margin-bottom: 0.75rem;
   height: 2rem;
+  border: none;
+  font-size: 0.9rem;
+  border-radius: 5px;
 }
 
 .form textarea {
   height: 10rem;
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
+  border: none;
+  font-size: 0.9rem;
+  border-radius: 5px;
 }
 
 .confirmation-msg {
-  margin-top: 1rem;
+  margin: 1rem;
+}
+
+.form input:focus,
+.form textarea:focus {
+  outline: none;
 }
