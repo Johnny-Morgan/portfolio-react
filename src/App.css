@@ -10,6 +10,11 @@
   --c-white: hsl(0, 0%, 96%);
 }
 
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.25rem hsla(0, 0%, 96%, 0.5);
+}
+
 .app {
   height: 100vh;
 }
