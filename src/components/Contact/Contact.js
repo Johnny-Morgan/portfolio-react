@@ -43,15 +43,28 @@ const Contact = () => {
         </p>
         <form ref={formRef} className={classes.form} onSubmit={handleSubmit}>
           <label htmlFor="name">Name</label>
-          <input type="text" name="name" id="name" required />
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Name"
+            required
+          />
           <label htmlFor="email">Email</label>
-          <input type="email" name="email" id="email" required />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email"
+            required
+          />
           <label htmlFor="message">Message</label>
           <textarea
             name="message"
             id="message"
             cols="30"
             rows="10"
+            placeholder="Your message"
             required
           ></textarea>
           <Button type="submit">Submit</Button>
