@@ -1,19 +1,22 @@
 .btn {
-  border: 1px solid var(--c-chilli);
+  border: 1px solid var(--c-charcoal);
   border-radius: 5px;
-  background: var(--c-chilli);
+  background: var(--c-charcoal);
   color: var(--c-white);
   padding: 0.5em 1em;
   cursor: pointer;
   font-weight: 500;
+  text-transform: uppercase;
 }
 
 .btn:hover,
 .btn:active {
-  background: var(--c-chilli-light);
-  border-color: var(--c-chilli-light);
+  background: var(--c-charcoal-light);
+  border-color: var(--c-charcoal-light);
 }
 
-.btn:focus {
-  outline: none;
+@media (max-width: 768px) {
+  .btn {
+    font-size: 0.9rem;
+  }
 }
