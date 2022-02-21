@@ -23,6 +23,27 @@
   font-size: 3rem;
 }
 
+.about__socials {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.about__socials--icon {
+  font-size: 1.5rem;
+  width: 1.75rem;
+  height: 1.75rem;
+  color: var(--c-charcoal);
+  transition: all 0.5s;
+  padding: 0.75rem;
+  border: 1px solid var(--c-charcoal);
+  border-radius: 50%;
+  margin-block: 1rem;
+}
+
+.about__socials--icon:hover {
+  color: var(--c-chilli);
+}
+
 .buttons--container {
   display: flex;
   gap: 2.5rem;
