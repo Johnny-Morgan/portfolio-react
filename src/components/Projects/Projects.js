@@ -6,19 +6,21 @@ import { ProjectItems } from "./ProjectItems";
 const Projects = () => {
   return (
     <section id="projects" className={classes.projects}>
-      <h2 className={classes.header}>Projects</h2>
-      <div className={classes.container}>
-        {ProjectItems.map((project) => (
-          <Card
-            key={project.id}
-            img={project.img}
-            title={project.title}
-            about={project.about}
-            liveURL={project.liveURL}
-            repoURL={project.repoURL}
-            technologies={project.technologies}
-          />
-        ))}
+      <div className={classes.wrapper}>
+        <h2 className={classes.header}>Projects</h2>
+        <div className={classes.container}>
+          {ProjectItems.map((project) => (
+            <Card
+              key={project.id}
+              img={project.img}
+              title={project.title}
+              about={project.about}
+              liveURL={project.liveURL}
+              repoURL={project.repoURL}
+              technologies={project.technologies}
+            />
+          ))}
+        </div>
       </div>
     </section>
   );
