@@ -7,13 +7,12 @@
 }
 
 .header {
-  font-size: 3rem;
-  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  margin-top: 1rem;
 }
 
 .message {
   font-weight: 500;
-  margin-bottom: 1.5rem;
   width: 70%;
   text-align: center;
 }
@@ -24,6 +23,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 1rem;
+  height: 100%;
 }
 
 .form {
@@ -31,7 +32,7 @@
   flex-direction: column;
   width: 70%;
   height: 70%;
-  padding: 1.5rem;
+  padding: 1rem;
   border-radius: 5px;
   box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.15);
   background-image: linear-gradient(
@@ -39,31 +40,33 @@
     var(--c-terracotta-light),
     var(--c-terracotta)
   );
+  margin-bottom: 2rem;
 }
 
 .form label {
   color: var(--c-white);
   font-weight: 500;
   margin-bottom: 0.25rem;
+  font-size: 0.75rem;
 }
 
 .form input {
   margin-bottom: 0.75rem;
-  height: 2rem;
+  height: 1.5rem;
   border: none;
-  font-size: 0.9rem;
+  font-size: 0.75rem;
   border-radius: 5px;
   padding: 0.75rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .form textarea {
-  height: 10rem;
-  margin-bottom: 2rem;
+  height: 6rem;
+  margin-bottom: 1rem;
   border: none;
-  font-size: 0.9rem;
+  font-size: 0.75rem;
   border-radius: 5px;
-  padding: 0.75rem;
+  padding: 0.5rem 0.75rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
