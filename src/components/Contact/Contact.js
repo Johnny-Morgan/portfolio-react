@@ -37,10 +37,16 @@ const Contact = () => {
     <section id="contact" className={classes.contact}>
       <div className={classes.container}>
         <h2 className={classes.header}>Contact Me</h2>
-        <p className={classes.message}>
-          Interested in working together? Get in touch by filling out the form
-          below.
-        </p>
+        {!confirmationMessage ? (
+          <p className={classes.message}>
+            Interested in working together? Get in touch by filling out the form
+            below.
+          </p>
+        ) : (
+          <span className={classes["confirmation-msg"]}>
+            Thank you, your message has been sent. I'll be in touch!
+          </span>
+        )}
         <form ref={formRef} className={classes.form} onSubmit={handleSubmit}>
           <label htmlFor="name">Name</label>
           <input
@@ -69,11 +75,6 @@ const Contact = () => {
           ></textarea>
           <Button type="submit">Submit</Button>
         </form>
-        {confirmationMessage && (
-          <span className={classes["confirmation-msg"]}>
-            Thank you, your message has been sent. I'll be in touch!
-          </span>
-        )}
       </div>
     </section>
   );

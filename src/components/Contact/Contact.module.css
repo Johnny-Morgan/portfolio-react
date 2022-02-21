@@ -72,7 +72,8 @@
 }
 
 .confirmation-msg {
-  margin: 1rem;
+  font-weight: 500;
+  color: var(--c-terracotta);
 }
 
 .form *:focus {
