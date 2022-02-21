@@ -40,15 +40,15 @@
 }
 
 .card__content h3 {
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .card__technologies {
   display: flex;
-  gap: 0.75rem;
+  gap: 0.5rem;
   flex-wrap: wrap;
   padding: 0;
-  margin: 1rem 1.25rem 0;
+  margin-top: 1rem;
 }
 
 .card__technologies li {
@@ -56,17 +56,21 @@
 }
 
 .card__technologies img {
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 1.75rem;
+  height: 1.75rem;
   background: var(--c-herb-light);
   padding: 4px;
   border-radius: 100px;
 }
 
 .card__content--btns {
-  margin-top: 3rem;
+  margin-top: 1.5rem;
   display: flex;
   gap: 1rem;
+}
+
+.card__content--btns a {
+  font-size: 0.75rem;
 }
 
 .btn:link,
