@@ -24,6 +24,7 @@
   height: calc(100vh - 80px);
   position: relative;
   top: 80px;
+  scroll-behavior: smooth;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
   scrollbar-width: none;
