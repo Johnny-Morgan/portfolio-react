@@ -41,6 +41,7 @@
 
 .card__content h3 {
   margin-top: 1rem;
+  color: var(--c-herb-lighter);
 }
 
 .card__technologies {
@@ -75,7 +76,7 @@
 
 .btn:link,
 .btn:visited {
-  color: var(--c-white);
+  color: var(--c-herb-lighter);
   text-decoration: none;
   background: var(--c-herb);
   padding: 0.75em 1.5em;
@@ -86,7 +87,7 @@
 
 .btn--outline:link,
 .btn--outline:visited {
-  background: var(--c-white);
+  background: var(--c-herb-lighter);
   color: var(--c-herb);
 }
 
@@ -97,6 +98,6 @@
 
 .btn--outline:hover,
 .btn--outline:active {
-  color: var(--c-white);
+  color: var(--c-herb-lighter);
   background: var(--c-herb-light);
 }
