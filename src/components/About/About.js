@@ -1,9 +1,27 @@
 import React from "react";
 import portraitImage from "./portrait.png";
 import classes from "./About.module.css";
-import Socials from "../Socials/Socials";
 
 const About = () => {
+  const days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+
+  const adjectives = [
+    "super",
+    "magic",
+    "terrific",
+    "wonderful",
+    "topnotch",
+    "fantastic",
+    "spectacular",
+  ];
   return (
     <section id="about" className={classes.about}>
       <div className={classes.container}>
@@ -21,6 +39,12 @@ const About = () => {
               <div className={classes["about__title--item"]}>Outdoor Lover</div>
             </div>
           </div>
+          <p>
+            Currently searching for my first software developer role. Have a
+            look at my work below and feel free to get in touch by using the
+            form provided. Have a {adjectives[new Date().getDay()]}{" "}
+            {days[new Date().getDay()]}!
+          </p>
           <div className={classes["buttons--container"]}>
             <a
               href="#projects"
