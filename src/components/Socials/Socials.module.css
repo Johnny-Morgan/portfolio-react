@@ -1,0 +1,35 @@
+.icon {
+  padding: 0.75rem;
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+
+.icon--small {
+  width: 1rem;
+  height: 1rem;
+}
+
+.icon--large {
+  width: 1.75rem;
+  height: 1.75rem;
+}
+
+.icon-charcoal {
+  color: var(--c-charcoal);
+  border: 1px solid var(--c-charcoal);
+}
+
+.icon-charcoal:hover {
+  color: var(--c-white);
+  background: var(--c-charcoal-light);
+}
+
+.icon-chilli {
+  color: var(--c-chilli);
+  border: 1px solid var(--c-chilli);
+}
+
+.icon-chilli:hover {
+  color: var(--c-white);
+  background: var(--c-chilli-light);
+}
