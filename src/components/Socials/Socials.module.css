@@ -1,12 +1,17 @@
 .icon {
   padding: 0.75rem;
+  transition: all 0.5s;
+}
+
+.border {
   border-radius: 50%;
-  transition: all 0.3s;
+  border-width: 1px;
+  border-style: solid;
 }
 
 .icon--small {
-  width: 1rem;
-  height: 1rem;
+  width: 1.25rem;
+  height: 1.25rem;
 }
 
 .icon--large {
@@ -14,22 +19,21 @@
   height: 1.75rem;
 }
 
-.icon-charcoal {
+.icon--charcoal {
   color: var(--c-charcoal);
-  border: 1px solid var(--c-charcoal);
+  border-color: var(--c-charcoal);
 }
 
-.icon-charcoal:hover {
+.icon--charcoal:hover {
   color: var(--c-white);
   background: var(--c-charcoal-light);
 }
 
-.icon-chilli {
-  color: var(--c-chilli);
-  border: 1px solid var(--c-chilli);
+.icon--white {
+  color: var(--c-white);
+  border-color: var(--c-white);
 }
 
-.icon-chilli:hover {
-  color: var(--c-white);
-  background: var(--c-chilli-light);
+.icon--white:hover {
+  color: var(--c-charcoal);
 }
