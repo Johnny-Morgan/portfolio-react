@@ -1,5 +1,5 @@
 .projects {
-  background-color: var(--c-white);
+  background: var(--c-herb-lighter);
   display: flex;
   flex-direction: column;
   justify-content: center;

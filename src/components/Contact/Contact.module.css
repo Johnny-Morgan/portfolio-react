@@ -1,5 +1,6 @@
 .contact {
   color: var(--c-charcoal);
+  background: var(--c-terracotta-lighter);
 }
 
 .header {

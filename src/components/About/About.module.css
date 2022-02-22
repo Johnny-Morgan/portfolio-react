@@ -1,5 +1,5 @@
 .about {
-  background-color: var(--c-white);
+  background: var(--c-charcoal-lighter);
 }
 
 .container {
@@ -83,7 +83,7 @@
 
 .btn--outline {
   color: var(--c-charcoal);
-  background-color: var(--c-charcoal-xlight);
+  background-color: var(--c-charcoal-lighter);
   border: 2px solid var(--c-charcoal);
 }
 
@@ -105,7 +105,7 @@
   object-fit: cover;
   place-items: center;
   border-radius: 50%;
-  border: 6px solid var(--c-white);
+  border: 6px solid var(--c-charcoal-lighter);
   box-shadow: 5rem 2rem 1px;
 }
 

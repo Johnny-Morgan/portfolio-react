@@ -3,10 +3,13 @@
   --c-chilli-light: hsl(6, 49%, 49%);
   --c-charcoal: hsl(0, 0%, 24%);
   --c-charcoal-light: hsl(0, 0%, 27%);
+  --c-charcoal-lighter: hsl(0, 0%, 90%);
   --c-herb: hsl(107, 7%, 40%);
   --c-herb-light: hsl(107, 7%, 43%);
+  --c-herb-lighter: hsl(107, 7%, 93%);
   --c-terracotta: hsl(357, 23%, 47%);
   --c-terracotta-light: hsl(357, 23%, 50%);
+  --c-terracotta-lighter: hsl(357, 23%, 97%);
   --c-white: hsl(0, 0%, 96%);
 }
 
@@ -26,7 +29,7 @@
   top: 80px;
   scroll-behavior: smooth;
   overflow-y: scroll;
-  scroll-snap-type: y mandatory;
+  /* scroll-snap-type: y mandatory; */
   scrollbar-width: none;
 }
 
