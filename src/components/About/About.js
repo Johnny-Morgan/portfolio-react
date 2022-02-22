@@ -9,13 +9,6 @@ const About = () => {
       <div className={classes.container}>
         <div className={classes.about__info}>
           <h2>Hello, I'm John</h2>
-          <div className={classes.about__socials}>
-            <Socials
-              iconSize="icon--large"
-              iconStyle="icon--charcoal"
-              border={true}
-            />
-          </div>
           <p>
             I'm a full stack software developer. Lorem ipsum dolor sit amet
             consectetur adipisicing elit. Natus distinctio, nesciunt architecto
