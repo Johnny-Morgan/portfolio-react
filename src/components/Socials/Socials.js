@@ -4,7 +4,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
+const SIZES = ["icon--small", "icon--large"];
+const STYLES = ["icon--charcoal", "icon--white"];
+
 const Socials = ({ iconSize, iconStyle, border }) => {
+  const checkIconSize = SIZES.includes(iconSize) ? iconSize : SIZES[0];
+  const checkIconStyle = STYLES.includes(iconStyle) ? iconStyle : STYLES[0];
+
   return (
     <>
       <a
@@ -14,8 +20,8 @@ const Socials = ({ iconSize, iconStyle, border }) => {
       >
         <FontAwesomeIcon
           icon={faGithub}
-          className={`${classes.icon} ${classes[iconSize]} ${
-            classes[iconStyle]
+          className={`${classes.icon} ${classes[checkIconSize]} ${
+            classes[checkIconStyle]
           } ${border ? classes.border : ""}`}
         ></FontAwesomeIcon>
       </a>
@@ -26,8 +32,8 @@ const Socials = ({ iconSize, iconStyle, border }) => {
       >
         <FontAwesomeIcon
           icon={faLinkedin}
-          className={`${classes.icon} ${classes[iconSize]} ${
-            classes[iconStyle]
+          className={`${classes.icon} ${classes[checkIconSize]} ${
+            classes[checkIconStyle]
           } ${border ? classes.border : ""}`}
         ></FontAwesomeIcon>
       </a>
