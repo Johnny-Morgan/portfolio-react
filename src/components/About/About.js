@@ -2,9 +2,6 @@ import React from "react";
 import portraitImage from "./portrait.png";
 import classes from "./About.module.css";
 import Socials from "../Socials/Socials";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 const About = () => {
   return (
@@ -13,7 +10,11 @@ const About = () => {
         <div className={classes.about__info}>
           <h2>Hello, I'm John</h2>
           <div className={classes.about__socials}>
-            <Socials iconSize="icon--large" iconStyle="icon-charcoal" />
+            <Socials
+              iconSize="icon--large"
+              iconStyle="icon--charcoal"
+              border={true}
+            />
           </div>
           <p>
             I'm a full stack software developer. Lorem ipsum dolor sit amet
