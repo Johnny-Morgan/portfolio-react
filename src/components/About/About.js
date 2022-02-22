@@ -9,12 +9,18 @@ const About = () => {
       <div className={classes.container}>
         <div className={classes.about__info}>
           <h2>Hello, I'm John</h2>
-          <p>
-            I'm a full stack software developer. Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Natus distinctio, nesciunt architecto
-            perferendis doloribus vel et esse culpa dolorum illum vitae eum
-            laboriosam necessitatibus quia modi
-          </p>
+          <div className={classes.about__title}>
+            <div className={classes["about__title--wrapper"]}>
+              <div className={classes["about__title--item"]}>Web Developer</div>
+              <div className={classes["about__title--item"]}>
+                Backend Developer
+              </div>
+              <div className={classes["about__title--item"]}>
+                Lifelong Learner
+              </div>
+              <div className={classes["about__title--item"]}>Outdoor Lover</div>
+            </div>
+          </div>
           <div className={classes["buttons--container"]}>
             <a
               href="#projects"

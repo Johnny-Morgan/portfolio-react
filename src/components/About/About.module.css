@@ -23,10 +23,18 @@
   font-size: 3rem;
 }
 
-.about__socials {
+.about__title {
+  height: 3rem;
+  overflow: hidden;
+}
+
+.about__title--item {
+  height: 3rem;
+  font-size: 1.75rem;
+  font-weight: 500;
+  color: var(--c-chilli);
   display: flex;
-  gap: 1.5rem;
-  margin: 0.75rem 0 0.5rem;
+  align-items: center;
 }
 
 .buttons--container {
