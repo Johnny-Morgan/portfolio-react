@@ -1,10 +1,17 @@
 import React from "react";
 import ReactTooltip from "react-tooltip";
 import classes from "./Card.module.css";
+import { motion } from "framer-motion";
 
 const Card = ({ title, img, about, liveURL, repoURL, technologies }) => {
   return (
-    <div className={classes.card}>
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true }}
+      className={classes.card}
+      transition={{ delay: 0.3 }}
+    >
       <img
         className={classes.card__img}
         src={require(`${img}`)}
@@ -45,7 +52,7 @@ const Card = ({ title, img, about, liveURL, repoURL, technologies }) => {
           </a>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
