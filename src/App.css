@@ -29,7 +29,7 @@
   top: 80px;
   scroll-behavior: smooth;
   overflow-y: scroll;
-  /* scroll-snap-type: y mandatory; */
+  scroll-snap-type: y proximity;
   scrollbar-width: none;
 }
 
