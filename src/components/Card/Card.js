@@ -3,11 +3,20 @@ import ReactTooltip from "react-tooltip";
 import classes from "./Card.module.css";
 import { motion } from "framer-motion";
 
-const Card = ({ title, img, about, liveURL, repoURL, technologies }) => {
+const Card = ({
+  title,
+  img,
+  about,
+  liveURL,
+  repoURL,
+  technologies,
+  initialAnimationState,
+  finalAnimationState,
+}) => {
   return (
     <motion.div
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
+      initial={initialAnimationState}
+      whileInView={finalAnimationState}
       viewport={{ once: true }}
       className={classes.card}
       transition={{ delay: 0.3 }}

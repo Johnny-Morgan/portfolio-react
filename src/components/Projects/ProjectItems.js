@@ -13,6 +13,8 @@ export const ProjectItems = [
       { src: "./images/aws.png", tooltip: "AWS" },
       { src: "./images/heroku.png", tooltip: "Heroku" },
     ],
+    initialAnimationState: { opacity: 0, x: -300 },
+    finalAnimationState: { opacity: 1, x: 0 },
   },
   {
     id: 2,
@@ -27,6 +29,8 @@ export const ProjectItems = [
       { src: "./images/mongodb.png", tooltip: "MongoDB" },
       { src: "./images/heroku.png", tooltip: "Heroku" },
     ],
+    initialAnimationState: { opacity: 0 },
+    finalAnimationState: { opacity: 1 },
   },
   {
     id: 3,
@@ -39,5 +43,7 @@ export const ProjectItems = [
       { src: "./images/javascript.png", tooltip: "JavaScript" },
       { src: "./images/jquery.png", tooltip: "jQuery" },
     ],
+    initialAnimationState: { opacity: 0, x: 300 },
+    finalAnimationState: { opacity: 1, x: 0 },
   },
 ];

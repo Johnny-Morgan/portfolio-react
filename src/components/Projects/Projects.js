@@ -24,6 +24,8 @@ const Projects = () => {
               liveURL={project.liveURL}
               repoURL={project.repoURL}
               technologies={project.technologies}
+              initialAnimationState={project.initialAnimationState}
+              finalAnimationState={project.finalAnimationState}
             />
           ))}
         </div>
