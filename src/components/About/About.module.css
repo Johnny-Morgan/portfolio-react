@@ -5,7 +5,7 @@
 .container {
   color: var(--c-charcoal);
   height: 100%;
-  width: min(100% - 2rem, 60rem);
+  width: min(100% - 2rem, 55rem);
   margin-inline: auto;
   display: flex;
   align-items: center;
