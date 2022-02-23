@@ -24,7 +24,7 @@ const About = () => {
     "spectacular",
   ];
   return (
-    <section id="about" className={classes.about}>
+    <section aria-label="About John" id="about" className={classes.about}>
       <div className={classes.container}>
         <div className={classes.about__info}>
           <h2>Hello, I'm John</h2>
