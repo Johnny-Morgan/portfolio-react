@@ -27,10 +27,7 @@ const Contact = () => {
       );
 
     setConfirmationMessage(true);
-    // Reset form
-    formRef.current.name.value = "";
-    formRef.current.email.value = "";
-    formRef.current.message.value = "";
+    formRef.current.reset();
   };
 
   return (
