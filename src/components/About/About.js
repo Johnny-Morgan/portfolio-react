@@ -1,6 +1,7 @@
 import React from "react";
 import portraitImage from "./portrait.png";
 import classes from "./About.module.css";
+import { motion } from "framer-motion";
 
 const About = () => {
   const days = [
@@ -60,9 +61,14 @@ const About = () => {
             </a>
           </div>
         </div>
-        <div className={classes.about__img}>
+        <motion.div
+          initial={{ opacity: 0, x: 40 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ delay: 0.25 }}
+          className={classes.about__img}
+        >
           <img src={portraitImage} alt="portrait of John" />
-        </div>
+        </motion.div>
       </div>
     </section>
   );
