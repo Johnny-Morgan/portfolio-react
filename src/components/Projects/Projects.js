@@ -5,9 +5,15 @@ import { ProjectItems } from "./ProjectItems";
 
 const Projects = () => {
   return (
-    <section id="projects" className={classes.projects}>
+    <section
+      aria-labelledby="projects-title"
+      id="projects"
+      className={classes.projects}
+    >
       <div className={classes.wrapper}>
-        <h2 className={classes.header}>Projects</h2>
+        <h2 id="projects-title" className={classes.header}>
+          Projects
+        </h2>
         <div className={classes.container}>
           {ProjectItems.map((project) => (
             <Card

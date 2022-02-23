@@ -34,9 +34,15 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className={classes.contact}>
+    <section
+      aria-labelledby="contact-title"
+      id="contact"
+      className={classes.contact}
+    >
       <div className={classes.container}>
-        <h2 className={classes.header}>Contact Me</h2>
+        <h2 id="contact-title" className={classes.header}>
+          Contact Me
+        </h2>
         {!confirmationMessage ? (
           <p className={classes.message}>
             Interested in working together? Get in touch by filling out the form
