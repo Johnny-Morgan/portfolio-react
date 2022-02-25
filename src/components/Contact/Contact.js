@@ -2,6 +2,7 @@ import React, { useState, useRef } from "react";
 import Button from "../UI/Button/Button";
 import classes from "./Contact.module.css";
 import emailjs from "@emailjs/browser";
+import { motion } from "framer-motion";
 
 const Contact = () => {
   const [confirmationMessage, setConfirmationMessage] = useState(false);
@@ -46,9 +47,13 @@ const Contact = () => {
             below.
           </p>
         ) : (
-          <span className={classes["confirmation-msg"]}>
+          <motion.p
+            animate={{ scale: 1.1 }}
+            transition={{ duration: 0.5 }}
+            className={classes["confirmation-msg"]}
+          >
             Thank you, your message has been sent. I'll be in touch!
-          </span>
+          </motion.p>
         )}
         <form ref={formRef} className={classes.form} onSubmit={handleSubmit}>
           <label htmlFor="name">Name</label>
