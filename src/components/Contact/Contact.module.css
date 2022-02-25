@@ -99,10 +99,12 @@
     width: 20rem;
   }
 
-  .message {
+  .message,
+  .confirmation-msg {
     font-size: 0.9rem;
     margin-bottom: 1rem;
     width: 80%;
+    text-align: center;
   }
 
   .form label {
