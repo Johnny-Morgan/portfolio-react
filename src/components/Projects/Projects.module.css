@@ -9,6 +9,9 @@
 .wrapper {
   height: 100%;
   width: min(100% - 2rem, 55rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .header {
@@ -25,25 +28,17 @@
   margin-bottom: 3rem;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 916px) {
   .projects {
     height: auto;
   }
 
   .header {
-    margin-top: 2rem;
-  }
-
-  .container {
-    margin-bottom: 3rem;
+    font-size: 2.5rem;
   }
 }
 
-@media (max-width: 768px) {
-  .header {
-    font-size: 2.5rem;
-  }
-
+@media (max-width: 848px) {
   .container {
     flex-direction: column;
     gap: 2rem;
