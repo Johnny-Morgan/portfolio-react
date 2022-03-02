@@ -1,3 +1,15 @@
+const TECHNOLOGIES = {
+  python: { src: "./images/python.png", tooltip: "Python" },
+  django: { src: "./images/django.png", tooltip: "Django" },
+  postgres: { src: "./images/postgresql.png", tooltip: "PostgreSQL" },
+  aws: { src: "./images/aws.png", tooltip: "AWS" },
+  heroku: { src: "./images/heroku.png", tooltip: "Heroku" },
+  flask: { src: "./images/flask.png", tooltip: "Flask" },
+  mongo: { src: "./images/mongodb.png", tooltip: "MongoDB" },
+  javaScript: { src: "./images/javascript.png", tooltip: "JavaScript" },
+  jQuery: { src: "./images/jquery.png", tooltip: "jQuery" },
+};
+
 export const ProjectItems = [
   {
     id: 1,
@@ -7,11 +19,11 @@ export const ProjectItems = [
     liveURL: "https://pickles-eshop.herokuapp.com/",
     repoURL: "https://github.com/Johnny-Morgan/pickles",
     technologies: [
-      { src: "./images/python.png", tooltip: "Python" },
-      { src: "./images/django.png", tooltip: "Django" },
-      { src: "./images/postgresql.png", tooltip: "PostgreSQL" },
-      { src: "./images/aws.png", tooltip: "AWS" },
-      { src: "./images/heroku.png", tooltip: "Heroku" },
+      TECHNOLOGIES.python,
+      TECHNOLOGIES.django,
+      TECHNOLOGIES.postgres,
+      TECHNOLOGIES.aws,
+      TECHNOLOGIES.heroku,
     ],
     initialAnimationState: { opacity: 0, x: -300 },
     finalAnimationState: { opacity: 1, x: 0 },
@@ -24,10 +36,10 @@ export const ProjectItems = [
     liveURL: "https://hike-logger.herokuapp.com/",
     repoURL: "https://github.com/Johnny-Morgan/hike-logger",
     technologies: [
-      { src: "./images/python.png", tooltip: "Python" },
-      { src: "./images/flask.png", tooltip: "Flask" },
-      { src: "./images/mongodb.png", tooltip: "MongoDB" },
-      { src: "./images/heroku.png", tooltip: "Heroku" },
+      TECHNOLOGIES.python,
+      TECHNOLOGIES.flask,
+      TECHNOLOGIES.mongo,
+      TECHNOLOGIES.heroku,
     ],
     initialAnimationState: { opacity: 0 },
     finalAnimationState: { opacity: 1 },
@@ -39,10 +51,7 @@ export const ProjectItems = [
     about: "A fun and challenging memory game.",
     liveURL: "https://johnny-morgan.github.io/memory-blocks/",
     repoURL: "https://github.com/Johnny-Morgan/memory-blocks",
-    technologies: [
-      { src: "./images/javascript.png", tooltip: "JavaScript" },
-      { src: "./images/jquery.png", tooltip: "jQuery" },
-    ],
+    technologies: [TECHNOLOGIES.javaScript, TECHNOLOGIES.jQuery],
     initialAnimationState: { opacity: 0, x: 300 },
     finalAnimationState: { opacity: 1, x: 0 },
   },
