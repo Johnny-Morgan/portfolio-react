@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import ReactTooltip from "react-tooltip";
 import classes from "./Card.module.css";
 import { motion } from "framer-motion";
@@ -65,4 +66,14 @@ const Card = ({
   );
 };
 
+Card.propTypes = {
+  title: PropTypes.string.isRequired,
+  img: PropTypes.string.isRequired,
+  about: PropTypes.string.isRequired,
+  liveURL: PropTypes.string.isRequired,
+  repoURL: PropTypes.string.isRequired,
+  technologies: PropTypes.arrayOf(PropTypes.object).isRequired,
+  initialAnimationState: PropTypes.object,
+  finalAnimationState: PropTypes.object,
+};
 export default Card;
