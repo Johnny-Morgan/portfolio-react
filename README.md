@@ -10,7 +10,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 - [GitHub](https://github.com/) - GitHub is used to store the project's code after being pushed from Git.
 
-- [Google Fonts](https://fonts.google.com/specimen/Inter?query=inter) - Google Fonts was used to obtain the Poppins font.
+- [Google Fonts](https://fonts.google.com/specimen/Poppins?query=poppins) - Google Fonts was used to obtain the Poppins font.
 
 ## Dependencies
 
