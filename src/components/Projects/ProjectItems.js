@@ -19,7 +19,7 @@ export const ProjectItems = [
     img: "./images/project1.png",
     title: "Pickles",
     about: "An e-commerce website built with the Django Framework.",
-    liveURL: "https://pickles-eshop.herokuapp.com/",
+    liveURL: "https://pickles.onrender.com/",
     repoURL: "https://github.com/Johnny-Morgan/pickles",
     technologies: [
       TECHNOLOGIES.python,
@@ -40,7 +40,7 @@ export const ProjectItems = [
     img: "./images/project2.png",
     title: "Hike Logger",
     about: "The perfect place to log and share your hikes.",
-    liveURL: "https://hike-logger.herokuapp.com/",
+    liveURL: "https://hike-logger.onrender.com/",
     repoURL: "https://github.com/Johnny-Morgan/hike-logger",
     technologies: [
       TECHNOLOGIES.python,
